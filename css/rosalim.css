@@ -2,14 +2,19 @@ body {
     font-family: sans-serif;
     margin: 0;
     padding: 0;
+    max-width: 100vw;
 }
 .primerLinea {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 15px 10%;
     background-color: #35bbea;
     color: white;
     border-bottom: 1px solid grey;
+}
+.iconos {
+    font-size: 1.5rem;
 }
 
 .segundaLinea {
@@ -21,15 +26,16 @@ body {
 }
 .segundaLinea > img {
     width: 10%;
-    
 }
 .login > a {
     text-decoration: none;
-    margin-right: 15px;
+    margin-left: 0.5rem;
+    color: #000;
 }
-.login > i {
-    margin-left: 15px;
-    }
+.iniciarsesion {
+    margin-right: 2rem;
+}
+
 .segundaLinea > a {
     color: #000;
 }
@@ -45,54 +51,67 @@ body {
     font-weight: 500;
     color: #000;
 }
-h1 {
+/* fin del header */
+
+/*inicio main-page-wraper */
+
+.main-page-wrapper {
     display: flex;
-    background-color: #35bbea;
-    font-size: 50px;
-    margin: auto;
-    padding: 2rem;
-    align-items: center;
-    justify-content: center;
-    color: #fff;
-}
-.contenedor {
-    display: flex;
+    margin: 2% 10%;
+    height: 500px;
 }
 .categorias {
-    max-width: 30vw;
     flex-direction: column;
-    margin-left: 10%;
-    margin-right: 0;
-}
-.tituloCategoria {
-    margin-left: 10%;
-    padding-bottom: 0;
-    margin-bottom: 0;
-    background-color: #fff;
+    padding-left: 0;
 }
 .categorias > li {
-    padding: 1rem 30rem 1rem 1rem;
+    padding: 1rem 8rem 1rem 1rem;
     list-style: none;
-    padding-right: 1rem;
     border: 1px solid #000;
+    margin-right: 4%;
 }
 .categorias > li > a {
     text-decoration: none;
-    margin: 0;
     padding-right: 10px;
+    color: #000; 
 }
-.primeraParte {
-    display: flex;
-}
-.imagenLocal {
-    display: flex;
-    max-width: 55vw;
+.main-page-wrapper > img {
     background-color: black;
-    margin-right: 10%;
-    margin-left: 10%;
+    margin-left: 2%;
+    flex-grow: 3;
 }
-.imagenLocal > img {
-    max-width: 50%;
-    margin: auto;
+.titulo {
+    background-color: #35bbea;
+    font-weight: 600;
 }
 
+/* fin main-page-wraper */
+/*inicio ofertas */
+.ofertas {
+    display: flex;
+    margin: 0 10%;
+}
+.ofertas > img {
+    max-width: 49%;
+}
+.imagen1 {
+    padding-right: 1%;
+}
+.imagen2 {
+    padding-left: 1%;
+}
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10%;
+    background-color: #35bbea;
+}
+.footer2 {
+    display: flex;
+    flex-direction: column;
+}
+.footer3 {
+    display: flex;
+    flex-direction: column;
+}
