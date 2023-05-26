@@ -1,0 +1,86 @@
+:root {
+    --color--primario: #38baeb;
+    --color--secundario: #95bb30;
+}
+.contenedor-hero {
+    margin: 1rem 10%;
+    display: flex;
+    max-height: 450px;
+}
+.categorias {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 20%;
+    max-height: 450px;
+    flex-grow: 1;
+}
+.categorias > a{
+    border: 1px solid lightgray;
+    padding: 1rem;
+    text-decoration: none;
+    color: black; 
+}
+.categorias > a {
+    height: 55px;
+}
+.categorias > a:first-child {
+    background-color: var(--color--primario);
+    color: #fff;
+    font-size: 1.2rem;
+    padding: 1.2rem 1rem;
+    cursor:initial;
+    height: 65px;
+}
+.categorias > a:hover {
+    background-color: #f9f9f9;
+}
+.categorias > a:first-child:hover {
+    background-color: var(--color--primario);
+}
+
+.carousel {
+    width:80%;
+    margin-left: 1rem;
+    background: linear-gradient(90deg, rgba(50,70,36,1) 5%, rgba(118,120,117,1) 100%);
+}
+.carousel-item > img {
+    max-height: 450px;
+    object-fit: cover;
+    opacity: 0.75;
+}
+.carousel-control-prev,
+.carousel-control-next {
+    display: none;
+}
+.carousel-caption {
+    top: 30%;
+    left: 0;
+}
+.carousel-caption > h2 {
+    color: #fff;
+    text-align: left;
+    padding-left: 1rem;
+}
+.carousel-caption > h1 {
+    color: #000;
+    text-align: left;
+    padding-left: 1rem;
+    font-weight: bolder;
+}
+.carousel-caption > p {
+   color: #fff;
+   text-align: left;
+   padding-left: 1rem;
+   font-style: italic;
+   font-size: 1.2rem;
+}
+.carousel-btn {
+    color: #fff;
+    background-color: var(--color--primario);
+    padding: 5px 30px;
+    display: block;
+    text-align: left;
+    border-radius: 20px;
+    margin-left: 3rem;
+}

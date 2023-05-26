@@ -1,0 +1,56 @@
+:root {
+    --color--primario: #38baeb;
+    --color--secundario: #95bb30;
+}
+
+.contenedor-footer {
+    background-color: var(--color--primario);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1rem 10%;
+    border: 1px solid black;
+}
+.redes {
+    text-align: center;
+    text-decoration: none;
+}
+.redes > ul {
+    list-style: none;
+}
+.redes > ul > li {
+    padding-bottom: 5px;
+}
+.redes > ul > li > a:hover {
+    color: #f9f9f9;
+}
+.redes > ul > li > a {
+    text-decoration: none;
+    color: black
+}
+.redes-icon {
+    font-size: 1.5rem;
+}
+.redes > img {
+    background-color: white;
+    width: 150px;
+    border-radius: 20%;
+    padding: 0.4rem;
+    object-fit: contain;
+    margin-left: 10px;
+}
+.contacto {
+    text-align: center;
+}
+.enlaces {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+}
+h4 {
+    display: inline-block;
+    text-align: center;
+}
+.redes {
+    color:pink;
+}

@@ -1,0 +1,34 @@
+:root {
+    --color--primario: #38baeb;
+    --color--secundario: #95bb30;
+}
+.promociones {
+    margin: 2rem 0;
+    background-color: #f9f9f9;
+}
+.promociones > h2 {
+    padding-top: 2.5rem;
+    margin: 1rem 10%;
+    font-weight: bold;
+    text-align: center;
+    border-bottom: 1px solid lightgrey;
+    padding-bottom: 0.5rem;
+}
+.cards-promociones-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0 10%;
+    padding-bottom: 2.5rem;
+}
+.card-promociones {
+    text-align: center;
+    padding: 3px;
+}
+.precio-sin-dto {
+    text-decoration: line-through;
+}
+.precio-con-dto {
+    font-size: larger;
+    color: var(--color--primario);
+}

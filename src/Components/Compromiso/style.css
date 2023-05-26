@@ -1,0 +1,48 @@
+:root {
+    --color--primario: #38baeb;
+    --color--secundario: #95bb30;
+}
+.compromiso {
+    margin: 0 10% 1.5rem;
+}
+.compromiso > h2 {
+    text-align: center;
+    color: var(--color--primario);
+    margin-bottom: 1.5rem;
+}
+.contenedor-compromisos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.calidad, .reciclado, .envios {
+    width: 31%;
+    height: 200px;
+    border: 1px solid black;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+    padding: 2px;
+}
+.calidad {
+    background: linear-gradient(to right, rgba(56, 186, 235, 0.6), rgba(56, 186, 235, 0.6)), url(../../Imagenes/laboratorio.jpg);
+    background-size: 100%;
+    color: white;
+}
+.reciclado {
+    background: linear-gradient(to right, rgba(56, 186, 235, 0.6), rgba(56, 186, 235, 0.6)), url(../../Imagenes/bidones.jpg);
+    background-size: 100%;
+    color: white;
+}
+.envios{
+    background: linear-gradient(to right, rgba(56, 186, 235, 0.6), rgba(56, 186, 235, 0.6)), url(../../Imagenes/reparto.jpg);
+    background-size: 100%;
+    color: white;
+}
+.compromiso-iconos {
+    font-size: 2.5rem;
+}

@@ -1,0 +1,71 @@
+:root {
+    --color--primario: #38baeb;
+    --color--secundario: #95bb30;
+}
+.primer-fila {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    background-color: var(--color--primario);
+    padding: 0 10%;
+    color: #fff;
+    height: 2.5rem;
+}
+.primer-fila > a {
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer;
+}
+.primer-fila-iconos > a {
+    font-size: 1.4rem;
+    align-items: center;
+    color: #fff;
+    padding: 5px;
+}
+.primer-fila-iconos> a:hover, .primer-fila > a:hover {
+    color: #55dceb;
+}
+.segunda-fila {
+    border-bottom: 1px solid lightgray;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.segunda-fila > img {
+    width: 120px;
+    padding: 5px 0;
+    margin-left: 10%;
+}
+.login {
+    width: 15%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 10%;
+}
+.login > a {
+    text-decoration: none;
+    color: #000;
+    padding: 10px 0;
+}
+.login > a:hover {
+    color: var(--color--primario);
+}
+.segunda-fila-iconos {
+    font-size: 1.4rem;
+}
+.tercer-fila {
+    padding: 1rem 0;
+    margin: 0 10%;
+}
+.tercer-fila > a {
+    text-decoration: none;
+    color: #000;
+    padding-right: 2rem;
+}
+.tercer-fila > a:hover {
+    color: var(--color--primario);
+}
+
