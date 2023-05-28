@@ -41,4 +41,4 @@ function Promociones() {
             </section>
   );
 }
-export default Promociones
+export {Promociones};

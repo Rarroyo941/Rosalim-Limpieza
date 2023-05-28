@@ -26,4 +26,4 @@ function Compromiso() {
         </section>
     )
     }
-export default Compromiso
+export {Compromiso}

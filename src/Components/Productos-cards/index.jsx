@@ -81,4 +81,4 @@ function Productos() {
             </section>
   );
 }
-export default Productos
+export {Productos};

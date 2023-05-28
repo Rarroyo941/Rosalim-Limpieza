@@ -1,9 +1,9 @@
-import './App.css';
+import './Navbar.css';
 import { FaFacebookF, FaInstagram } from 'react-icons/fa'
 import {AiOutlineSearch, AiOutlineHeart } from 'react-icons/ai'
 import logo from '../../Imagenes/logo.jpg'
 
-function App() {
+function Navbar() {
   return (
     <header className="app-header" id='inicio'>
       <div className="primer-fila">
@@ -23,13 +23,13 @@ function App() {
       </div>
       <div className="tercer-fila">
         <a href='#inicio'>HOME</a>
-        <a href='#'>PRODUCTOS</a>
+        <a href='/Products'>PRODUCTOS</a>
         <a href='#promociones'>PROMOCIONES</a>
-        <a href='#'>NOSOTROS</a>
-        <a href='#'>CONTACTO</a>
+        <a href='/Login'>NOSOTROS</a>
+        <a href='/Contacto'>CONTACTO</a>
       </div>
     </header>
   );
 }
 
-export default App;
+export {Navbar};

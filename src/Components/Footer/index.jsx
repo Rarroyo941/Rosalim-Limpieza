@@ -3,6 +3,7 @@ import {  AiFillInstagram, AiFillFacebook } from 'react-icons/ai';
 import { IoLogoWhatsapp } from 'react-icons/io';
 import logo from '../../Imagenes/logo.jpg'
 function Footer() {
+    
     return( 
         <footer className='contenedor-footer'>
             <div className='redes'>
@@ -37,4 +38,4 @@ function Footer() {
         </footer>
     )
 }
-export default Footer
+export {Footer}

@@ -2,24 +2,26 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './Components/Navbar/App';
-import Productos from './Components/Productos-cards/Productos';
-import Promociones from './Components/Promociones-cards/promociones';
-import Compromiso from './Components/Compromiso/Compromiso';
-import Categorias from './Components/Categorias-carousel/Categoria';
-import Footer from './Components/Footer/Footer';
-import Prueba from './Components/Prueba';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { Navbar } from './Components/Navbar';
+import { Home } from './Components/Home';
+import { Product } from './Components/Product';
+import { Footer } from './Components/Footer';
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
-    <Categorias/>
-    <Promociones />
-    <Productos />
-    <Compromiso />
-    <Prueba/>
-    <Footer/>
+    <BrowserRouter>
+      <Navbar/>
+      <Routes>
+        <Route path='/' element={<Home/>}/>
+        <Route path='/home' element={<Home/>}/>
+        <Route path='/product' element={<Product/>}/>
+      </Routes>
+      <Footer/>
+    </BrowserRouter>
+
   </React.StrictMode>
 );
 
